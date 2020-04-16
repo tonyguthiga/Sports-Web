@@ -1,47 +1,120 @@
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotr Web</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="responsive.css" />
 </head>
-<body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">Navbar</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-      <ul class="navbar-nav">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Features</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Pricing</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        Dropdown link
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <a class="dropdown-item" href="#">Something else here</a>
-        </div>
-        </li>
-      </ul>
-    </div>
-  </nav>
 
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="column">
+        <h1>Sports</h1>
+        <p>Sportys is any activity that is done by two people with an aim of challenging the opponent
+            and also displaying creativity that aperson has and by this they pleases and entertain the audience.
+
+        </p>
+        <h2>Types of Sports</h2>
+        <ul>
+            <li>Rugby</li>
+            <li>Soccer</li>
+        </ul>
+        <h3>Rugby Sports</h3>
+        <p>Rugby sports is agame of big guys, this game is played by 15 players each team.It is an entertaining game
+            that
+            makes
+            people to grow physicaly and mentaly </p>
+        <h3> Paying game.</h3>
+        <p>This game is most entertaing because if you are not strong enough you cannot make it.Small bodied people also
+            can
+            participate
+            but it really reuires endurence to vanquish other strong teams position
+        </p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="column"><img src="img/rugby6.jpeg" height="180" width="250">
+                <h4 class="text-primary">Kenya National Rugby</h4>
+                <p> Kenya recorded its first tournament win in the World Rugby Sevens Series after beating Fiji at
+                    the 2016 Singapore Sevens.[3] Kenya has also been successful in the Rugby World Cup Sevens,
+                    reaching the semifinals in 2009 and again in 2013.</p>
+            </div>
+            <div class="column"><img src="img/ruby2.jpeg" height="180" width="250">
+                <h4 class="text-primary">World Rugby Player</h4>
+                <p>Jhon smit was the 50th captain of the South Africa national team, and led the team to win the
+                    2007 Rugby
+                    World Cup. He played most of his senior career as a hooker, but also won 13 caps as a prop,
+                    where he had also played for South Africa's under-21 team.</p>
+            </div>
+            <div class="column"><img src="img/guby1.jpeg" height="180" width="250">
+                <h4 class="text-primary"> Women in rugby</h4>
+                <p>On the eve of International Women’s Day, World Rugby has renewed its commitment to driving
+                    inspirational leadership and fast-tracking the development of women in rugby on and off the
+                    pitch through its successful Women’s </p>
+            </div>
+        </div>
+    
+
+            <div class="section-title">
+                <h1>Contact <span class="accent-text">Us</span> For more information</h1><br>
+            </div><br><br>
+            <section id="contact">
+                <div class="row center-xs center-sm center-md center-lg">
+                    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+
+
+
+                        <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
+                            <form id="contact-form" onsubmit="submitForm(); return false;">
+                                <div class="field">
+                                    Name<br>
+                                    <input type="text" id="name" value="" required>
+                                </div>
+                                <div class="field">
+                                    Email<br>
+                                    <input type="text" id="email" value="" required>
+                                </div>
+                                <div class="field">
+                                    Subject<br>
+                                    <input type="text" id="subject" value="" required>
+                                </div>
+                                <div class="field">
+                                    Message<br>
+                                    <textarea id="message" rows="10" cols="75" required></textarea>
+                                </div>
+                                <div class="field">
+                                    <input type="submit" id="contact-submit" value="Submit Form"><span
+                                        id="status"></span>
+                                </div>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+            <footer>
+                <div class="container">
+                    <div class="row">
+                        <div class="col"><a href="https://web.facebook.com/pages/category/sports/?_rdc=1&_rdr"><img  class="img"
+                                    src="img/facbook.jpg" height="50" width="50"></a></div><br><br>
+                        <div class="col"><a href="https://twitter.com/teamsportweb?lang=en"><img class="img" src="img/twitter.png"
+                                    height="50" width="50"></a></div><br><br>
+                        <div class="col"><a href="https://www.instagram.com/sportwebbrasil/"><img  class="img"
+                                    src="img/Instagram-Icon.png" height="50" width="50"></a></div><br><br>
+                        <div class="col"><img  class="img" src="img/whatsapp.jpg" height="50" width="50"> </div>
+                    </div>
+                </div>
+                <p id="foot">Copyright &#169; 2018 . All Rights Reserved.</p>
+            </footer>
+
+
 </body>
+
 </html>
